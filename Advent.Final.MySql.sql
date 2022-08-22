@@ -39,9 +39,8 @@ CREATE TABLE PaymentMethods(
 	LastDigits varchar(4) NOT NULL
 );
 
--- DROP TABLE Users;
--- DROP TABLE Roles;
--- DROP TABLE UsersRoles;
-
 INSERT INTO Users(Id, Name, LastName, Birthdate, Gender, CellPhone, Email, UserName, Password, CreatedAt, LastLogIn, LastLogOut, Status)
 VALUES(1, 'Sebastian', 'Romero', '2002-03-28', 'M', '32897123','sebasromero@hotmail.com', 'sebasromero', '7e18b4476d66977486f9f5df1bde792d36411a13381645fd4c055515db424226', '2022-08-01', '2022-08-03', '2022-08-01', 'Valid');
+
+INSERT INTO PaymentMethods(Id, UserId, Toke, LastDigits)
+VALUES(1, 1, 'card_1LZPcSDppIqFru5TlDixZbZV', '4242')
